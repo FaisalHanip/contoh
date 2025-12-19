@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan | Andi & Siti</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- AUDIO -->
+<audio id="bgMusic" autoplay loop>
+  <source src="lagunikah.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MUSIC CONTROL -->
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <p class="subtitle">Undangan Pernikahan</p>
+    <h1>Firdaus & Napeboto</h1>
+    <p id="tamu"></p>
+    <p class="date">Sanga andigan ma</p>
+  </div>
+</section>
+
+<!-- AYAT -->
+<section class="ayat fade">
+  <p class="arab">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا</p>
+  <p class="arti">
+    "Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan
+    untukmu dari jenismu sendiri..." (QS. Ar-Rum: 21)
+  </p>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown fade">
+  <h2>Menuju Hari Bahagia</h2>
+  <div class="timer">
+    <div><span id="days">0</span>Hari</div>
+    <div><span id="hours">0</span>Jam</div>
+    <div><span id="minutes">0</span>Menit</div>
+    <div><span id="seconds">0</span>Detik</div>
+  </div>
+</section>
+
+<!-- KADO -->
+<section class="gift fade">
+  <h2>Kado Digital</h2>
+  <div class="bank-card">
+    <p id="rekening">1234567890</p>
+    <p>a.n Tumorang</p>
+    <button onclick="copyRekening()">Salin Rekening</button>
+    <span id="notif"></span>
+  </div>
+</section>
+
+<!-- UCAPAN --> 
+<section class="ucapan fade">
+  <h2>Ucapan & Doa</h2>
+  <form id="ucapanForm">
+    <input type="text" id="nama" placeholder="Nama" required>
+    <textarea id="pesan" placeholder="Ucapan & Doa" required></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+
+  <div id="listUcapan"></div>
+</section>
+
+<!-- NAV MOBILE -->
+<nav class="bottom-nav">
+  <button onclick="scrollToSection('hero')">🏠</button>
+  <button onclick="scrollToSection('countdown')">⏳</button>
+  <button onclick="scrollToSection('gift')">💳</button>
+  <button onclick="scrollToSection('ucapan')">💬</button>
+</nav>
+
+<footer>
+  <p>Barakallahu lakuma 🤍</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
