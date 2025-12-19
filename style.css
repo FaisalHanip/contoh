@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #faf7f2;
+  text-align: center;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac") center/cover;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.music-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: gold;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  z-index: 999;
+}
+
+.ayat {
+  background: white;
+}
+
+.countdown .timer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer div {
+  background: gold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bank-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.ucapan form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-row: inherit;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background: gold;
+}
+
+.bottom-nav button {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background: none;
+  font-size: 20px;
+}
